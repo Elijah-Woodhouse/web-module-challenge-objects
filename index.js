@@ -179,8 +179,8 @@ Use the getReviewByIndex function below to do the following:
 
 
 function getReviewByIndex(arr, num) {
-  review = arr[num];
-  var string = `${review.name} gave the restaurant a ${review.rating} star review and their feedback was: ${review.feedback}`;
+  var review = arr[num];
+  var string = `${arr[num].name} gave the restaurant a ${arr[num].rating} star review, and their feedback was: ${arr[num].feedback}`;
   // console.log(string);
   return string;
 }
@@ -208,8 +208,8 @@ Use the getLastReview function below to do the following:
 
 
 function getLastReview(arr) {
-  lastReview = arr.at(-1);
-  string = `${lastReview.name} gave the restaurant a ${lastReview.rating} star review, and their feedback was: ${lastReview.feedback}`;
+  var lastReview = arr.at(-1);
+  var string = `${lastReview.name} gave the restaurant a ${lastReview.rating} star review, and their feedback was: ${lastReview.feedback}`;
   console.log(string);
   return string;
    }
@@ -324,10 +324,10 @@ function carMaker(drivenMiles) {
     }
     return car;
   }
-const car1 = carMaker(10);
-car1.driveMethod(100);
-const car2 = carMaker(50);
-car2.driveMethod(25);
+// const car1 = carMaker(10);
+// car1.driveMethod(100);
+// const car2 = carMaker(50);
+// car2.driveMethod(25);
 
 
 /* 🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑 */
