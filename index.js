@@ -239,7 +239,7 @@ Use the getReviewsByRating function below to do the following:
 */
 
  function getReviewByRating(arr, num) {
-    emptyList = [];
+    const emptyList = [];
     for (let i = 0; i < arr.length; i++){
       if (Math.floor(arr[i].rating) === num){
         emptyList.push(arr[i]);
@@ -273,7 +273,7 @@ Use the getLongReviews function below to do the following:
 */
 
 function getLongReviews(arr) {
-  emptyArray = [];
+  const emptyArray = [];
     for (let i = 0; i < arr.length; i++){
       if (arr[i].feedback.split(' ').length > 15){
         emptyArray.push(arr[i]);
